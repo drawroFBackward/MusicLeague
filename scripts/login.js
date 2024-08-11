@@ -2,7 +2,7 @@ const fs = require('fs');
 
 function login(username, password) {
     // Read the users.csv file
-    const usersData = fs.readFileSync('users.csv', 'utf8');
+    const usersData = fs.readFileSync('./users.csv', 'utf8');
     
     // Split the file content into an array of lines
     const lines = usersData.split('\n');

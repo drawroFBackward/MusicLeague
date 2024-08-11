@@ -15,7 +15,7 @@ function register(user) {
     const csvData = `${newUser.username},${newUser.email},${newUser.password}\n`;
 
     // Append the CSV data to the users.csv file
-    fs.appendFile('users.csv', csvData, (err) => {
+    fs.appendFile('./users.csv', csvData, (err) => {
         if (err) {
             console.error('Error writing to users.csv:', err);
         } else {
